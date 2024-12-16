@@ -1,0 +1,22 @@
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3 {
+    letter-spacing: 1px;
+  }
+  
+  a {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  section {
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  

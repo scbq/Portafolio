@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Aguilera Dev - Portafolio</title>
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+  <!-- Header -->
+  <header class="min-h-screen flex flex-col justify-center items-center text-center bg-cover bg-center" 
+          style="background-image: url('img/fondo.jpeg');" data-aos="fade-in">
+    <div class="bg-black bg-opacity-50 p-6 rounded-lg">
+      <img src="img/familia.jpeg" alt="Tu Imagen" class="rounded-full w-32 h-32 mx-auto mb-4 border-4 border-gray-500">
+      <h1 class="text-5xl font-bold">¡Hola, soy Felipe Aguilera!</h1>
+      <p class="text-xl text-gray-400 mt-2">Alumno Ingeniería Informática | Desarrollador de Software</p>
+    </div>
+  </header>
+
+  <!-- Sobre Mí -->
+  <section id="sobre-mi" class="py-16 text-center bg-gray-800" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-4">Sobre mí</h2>
+    <p class="text-gray-300 leading-relaxed max-w-2xl mx-auto">
+      Soy estudiante de **Ingeniería en Informática** con experiencia en **HTML, CSS, JavaScript, Ruby on Rails** y **TailwindCSS**.
+      Me apasiona crear soluciones innovadoras y funcionales para resolver problemas complejos.
+    </p>
+  </section>
+
+  <!-- Tecnologías -->
+  <section id="tecnologias" class="py-16 bg-gray-900" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold text-center mb-8">Tecnologías</h2>
+    <div class="flex flex-wrap justify-center gap-4">
+      <span class="bg-blue-600 px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition">HTML</span>
+      <span class="bg-blue-600 px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition">CSS</span>
+      <span class="bg-blue-600 px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition">JavaScript</span>
+      <span class="bg-blue-600 px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition">Ruby on Rails</span>
+      <span class="bg-blue-600 px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition">TailwindCSS</span>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="py-16 bg-gray-800" data-aos="zoom-in">
+    <h2 class="text-3xl font-semibold text-center mb-8">Proyectos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div class="bg-gray-700 rounded-lg overflow-hidden shadow">
+        <img src="img/oliviaross.png" alt="Proyecto OliviaRose">
+        <div class="p-4">
+          <h3 class="text-xl font-medium">OliviaRose</h3>
+          <p class="text-gray-300 mb-2">Portafolio minimalista en GitHub Pages.</p>
+          <a href="#" class="text-blue-400 hover:underline">Ver proyecto →</a>
+        </div>
+      </div>
+      <div class="bg-gray-700 rounded-lg overflow-hidden shadow">
+        <img src="img/karipic.png" alt="Proyecto 2">
+        <div class="p-4">
+          <h3 class="text-xl font-medium">KariPic</h3>
+          <p class="text-gray-300 mb-2">Aplicación desarrollada con Rails y PostgreSQL.</p>
+          <a href="#" class="text-blue-400 hover:underline">Ver proyecto →</a>
+        </div>
+      </div>
+      <div class="bg-gray-700 rounded-lg overflow-hidden shadow">
+        <img src="img/viajeschile.png" alt="Proyecto OliviaRose">
+        <div class="p-4">
+          <h3 class="text-xl font-medium">Viajes Chile</h3>
+          <p class="text-gray-300 mb-2">Pagina Minimalista en GitHub Pages.</p>
+          <a href="https://scbq.github.io/viajes-chile/" class="text-blue-400 hover:underline">Ver proyecto →</a>
+        </div>
+      </div>
+      <div class="bg-gray-700 rounded-lg overflow-hidden shadow">
+        <img src="img/blockbuster.png" alt="Proyecto OliviaRose">
+        <div class="p-4">
+          <h3 class="text-xl font-medium">Block Buster</h3>
+          <p class="text-gray-300 mb-2">App web desarrollada en ruby on Rails.</p>
+          <a href="https://github.com/scbq/BlockBusterApp" class="text-blue-400 hover:underline">Ver proyecto →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-16 text-center bg-gray-900" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-4">Contacto</h2>
+    <div class="flex justify-center gap-6 text-2xl">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/felipe-aguilera-fuentealba-961b37147/" target="_blank" class="hover:text-blue-400 hover:scale-125 transition-transform duration-300">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+      <!-- GitHub -->
+      <a href="https://github.com/scbq" target="_blank" class="hover:text-blue-400 hover:scale-125 transition-transform duration-300">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/felipe_aguilera_fuentealba/" target="_blank" class="hover:text-pink-500 hover:scale-125 transition-transform duration-300">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <!-- Email -->
+      <a href="mailto:faaf6@hotmail.com" class="hover:text-red-400 hover:scale-125 transition-transform duration-300">
+        <ion-icon name="mail-outline"></ion-icon>
+      </a>
+      <!-- WhatsApp -->
+      <a href="https://wa.me/56954115922" target="_blank" class="hover:text-green-500 hover:scale-125 transition-transform duration-300">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </a>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true
+      });
+    });
+  </script>
+</body>
+</html>
