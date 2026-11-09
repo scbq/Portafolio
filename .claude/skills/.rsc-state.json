@@ -1,0 +1,244 @@
+{
+  "skills": {
+    "analyze": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\analyze"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\analyze"
+    },
+    "asdd": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\asdd"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\asdd"
+    },
+    "automation-strategy": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\automation-strategy"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\automation-strategy"
+    },
+    "clarify": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\clarify"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\clarify"
+    },
+    "connect-tool": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\connect-tool"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\connect-tool"
+    },
+    "constitution": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\constitution"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\constitution"
+    },
+    "debug": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\debug"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\debug"
+    },
+    "decision-challenge": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\decision-challenge"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\decision-challenge"
+    },
+    "deprecation": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\deprecation"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\deprecation"
+    },
+    "design": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\design"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\design"
+    },
+    "fable-operator": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\fable-operator"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\fable-operator"
+    },
+    "ftd": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\ftd"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\ftd"
+    },
+    "harness": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\harness"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\harness"
+    },
+    "idea-refinement": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\idea-refinement"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\idea-refinement"
+    },
+    "implement": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\implement"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\implement"
+    },
+    "init": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\init"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\init"
+    },
+    "orient": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\orient"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\orient"
+    },
+    "parallel": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\parallel"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\parallel"
+    },
+    "plan": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\plan"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\plan"
+    },
+    "review": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\review"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\review"
+    },
+    "sdd-init": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\sdd-init"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\sdd-init"
+    },
+    "ship": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\ship"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\ship"
+    },
+    "simplify-code": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\simplify-code"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\simplify-code"
+    },
+    "source-grounded-development": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\source-grounded-development"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\source-grounded-development"
+    },
+    "specify": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\specify"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\specify"
+    },
+    "suggest": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\suggest"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\suggest"
+    },
+    "tasks": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\tasks"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\tasks"
+    },
+    "tidy": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\tidy"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\tidy"
+    },
+    "unslop": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\unslop"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\unslop"
+    },
+    "ux": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\ux"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\ux"
+    },
+    "verify": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\verify"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\verify"
+    },
+    "worktrees": {
+      "files": [
+        "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\skills\\worktrees"
+      ],
+      "base": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\skills\\worktrees"
+    }
+  },
+  "agents": [],
+  "agentCollisions": [],
+  "agentsKept": [],
+  "explicitAgents": [],
+  "memory": {
+    "mode": "full",
+    "reason": "wired",
+    "paths": [
+      "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\session-memory-core.mjs",
+      "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\session-memory-adapter.mjs",
+      "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\session-memory.mjs",
+      "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\settings.local.json"
+    ]
+  },
+  "update": {
+    "mode": "hook"
+  },
+  "knowledge": {
+    "mode": "wired",
+    "reason": null,
+    "paths": [
+      "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\knowledge-sync.mjs",
+      "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.rsc\\trunk-policy.mjs",
+      "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\settings.local.json"
+    ]
+  },
+  "gitPermissions": {
+    "mode": "wired",
+    "path": "C:\\Users\\flash\\OneDrive\\Escritorio\\Proyectos\\Portafolio\\.claude\\settings.json"
+  },
+  "policy": {
+    "baseAgents": false,
+    "alwaysOn": true,
+    "codeHooks": false,
+    "dangerGuard": true,
+    "laneGate": true,
+    "gitmojiGuard": false,
+    "memory": true,
+    "context7": false
+  },
+  "commands": [
+    "checkpoint",
+    "learn",
+    "resume-session",
+    "save-session"
+  ],
+  "commandCollisions": [],
+  "version": "4.0.5"
+}

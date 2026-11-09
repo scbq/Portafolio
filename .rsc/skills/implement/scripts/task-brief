@@ -1,0 +1,92 @@
+#!/bin/sh
+# task-brief PLAN_FILE N
+# Extracts task N from a plan/tasks markdown file into a brief file in the sdd-workspace dir, and
+# prints its path. N may be written 2, 002 or T002: ids compare as numbers.
+#
+# Two task shapes are read, because `tasks` prescribes a table and older plans used headings:
+#   - a table row `| T002 | ... |` → the table's header, its separator and that row;
+#   - a heading `### T2 …` / `## T002 …` → the block up to the next ## / ### heading;
+#   - a bold block `**T002 — Interfaces**` → that line and what follows up to a blank line.
+# Both are printed when both exist (the row is the contract, the heading its detail).
+# If task N is not found, exits nonzero with a clear message.
+
+# Resolve the directory of this script portably.
+_SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+usage() {
+  printf 'Usage: task-brief <PLAN_FILE> <N>\n' >&2
+  printf '  PLAN_FILE  path to the tasks markdown file\n' >&2
+  printf '  N          task id to extract: 2, 002 or T002\n' >&2
+  exit 1
+}
+
+if [ $# -lt 2 ]; then
+  printf 'error: task-brief requires PLAN_FILE and N arguments\n' >&2
+  usage
+fi
+
+PLAN_FILE="$1"
+N="${2#T}"
+N="${N#t}"
+
+if [ ! -f "$PLAN_FILE" ]; then
+  printf 'error: plan file not found: %s\n' "$PLAN_FILE" >&2
+  exit 1
+fi
+
+case "$N" in
+  ''|*[!0-9]*)
+    printf 'error: N must be a task number (2, 002 or T002), got: %s\n' "$2" >&2
+    exit 1
+    ;;
+esac
+
+CONTENT="$(awk -v n="$N" '
+  function idnum(s) { sub(/^[Tt]/, "", s); return s + 0 }
+  BEGIN { n = n + 0; printing = 0; bold = 0; found = 0; head = ""; sep = "" }
+  # Table rows: remember the latest header + separator, print the matching row.
+  /^\|/ {
+    split($0, cell, "|"); id = cell[2]; gsub(/[[:space:]]/, "", id)
+    if (id ~ /^[Tt][0-9]+$/) {
+      if (idnum(id) == n) { if (!printing) { if (head != "") print head; if (sep != "") print sep }; print; found = 1; next }
+    } else if ($0 ~ /^\|[-:| ]+\|[[:space:]]*$/) { sep = $0 }
+    else { head = $0; sep = "" }
+    if (!printing) next
+  }
+  # A bold block `**T004 — Interfaces**` (what `tasks` writes under the table): the line and every
+  # line after it up to the first blank one. It is the task-local contract an isolated worker needs.
+  bold && /^[[:space:]]*$/ { bold = 0 }
+  bold { print; next }
+  /^\*\*[Tt][0-9]+/ {
+    t = $0; sub(/^\*\*/, "", t); sub(/[^Tt0-9].*$/, "", t)
+    if (idnum(t) == n) { bold = 1; found = 1; print ""; print; next }
+  }
+  /^#{2,3}[[:space:]]/ {
+    if (printing) { printing = 0 }
+    if (match($0, /^#{2,3}[[:space:]]+[Tt][0-9]+([[:space:](]|-|$)/)) {
+      t = $0; sub(/^#{2,3}[[:space:]]+/, "", t); sub(/[^Tt0-9].*$/, "", t)
+      if (idnum(t) == n) { printing = 1; found = 1; print ""; print; next }
+    }
+  }
+  { if (printing) print }
+  END { if (!found) exit 1 }
+' "$PLAN_FILE")" || {
+  printf 'error: task T%s not found in %s (looked for a "| T%s |" table row and a "### T%s" heading)\n' "$N" "$PLAN_FILE" "$N" "$N" >&2
+  exit 1
+}
+
+if [ -z "$CONTENT" ]; then
+  printf 'error: task T%s not found in %s\n' "$N" "$PLAN_FILE" >&2
+  exit 1
+fi
+
+# Get the scratch workspace dir.
+SCRATCH="$(sh "$_SCRIPT_DIR/sdd-workspace")"
+
+# Derive a readable unique name from the plan file basename and task number.
+PLAN_BASENAME="$(basename "$PLAN_FILE" .md)"
+NUM="$(printf %s "$N" | sed "s/^0*//")"
+OUT="$SCRATCH/brief-${PLAN_BASENAME}-T${NUM:-0}.txt"
+
+printf '%s\n' "$CONTENT" > "$OUT"
+printf '%s\n' "$OUT"
